@@ -4,8 +4,10 @@ Program didesain agar pengguna dapat mengekstrak informasi terupdate tentang cor
 dalam waktu singkat tanpa harus membaca keseluruhan file untuk memperoleh informasi
 
 #### Bahasa Pemograman : Python (versi 3 ke atas)
-#### Web Framework : HTML,CSS,flask
+#### Web Framework : HTML, CSS, flask
 #### Library atau Modul lainnya yang harus diinstall terlebih dahulu : nltk 
+
+![image](https://user-images.githubusercontent.com/47893326/80064799-20657d00-8563-11ea-8072-ab46ef8342ff.png)
 
 ## Struktur File
 ├───doc  
