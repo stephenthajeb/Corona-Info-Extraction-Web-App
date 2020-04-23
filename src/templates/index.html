@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Info Extractor App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  </head>
+  <body>
+    <!-- <h1>My Info Extraction App</h1> -->
+    <div class="main-block">
+      <h1 align="center">Info Extraction App</h1>
+      <hr width="450px" size="1.5px">
+      <form action="/" method="POST">
+        <h3 align="center">Get the latest update about Corrona Virus !!!</h3>
+          <div class="block">
+            <label>Folder : </label>
+            <input type="file" name="file" multiple="" required/>
+          </div>
+          
+          <div class="block">
+            <label>Keyword : </label>
+            <input type="text" name="keyword" value="terkonfirmasi positif" required/>
+          </div>
+          
+          <div class="block">
+            <label id="lblAlgo">Algorithm : </label>
+              <select id="dropDownAlgo" name="algo">
+                <option value="BM">Boyer Moore</option>
+                <option value="KMP">Knuth Morris Prath</option>
+                <option value="Regex">Regular Expression</option>
+              </select>
+          </div>
+          
+          <h4 style="text-align:center">Most Popular Keyword Searched</h4>
+          <div class="suggestion">
+            <p>#Terkonfirmasi Positif #Meninggal Dunia #Indonesia</p>
+            <p>#ODP  #PDP #Sembuh  #Tersebar #Dikondisikan #Corona</p>
+            <p>#Pengobatan #Penyebab #COVID-19 #Korban #Rumah Sakit</p>
+        </div>
+          
+          <div class="block-bottom">
+              <a href="/about">About</a>
+              <span id="submit"><input type="submit" id="btn_submit" value="Search"/></span> 
+          </div>
+        </form>
+  </body>
+  </html>
+  

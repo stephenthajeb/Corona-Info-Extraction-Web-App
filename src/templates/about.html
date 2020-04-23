@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Output</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+  </head>
+  <body>
+    <div class="main-block">
+      <h1 align="center">Info Extraction App</h1>
+      <hr width="450px" size="2px">
+      <div class="block">
+        <p>
+          Info Extractor is an app designed to extract information about date and numeric based on a keyword.
+          It's purpose is to help people to quickly access latest update about Corona Virus.
+          Input:multiple text files(English or Indonesian,CASE-INSENSITIVE). The algorithm used in processing the extraction :
+          <p>
+            <ul>
+              <li><b><i>Knuth Morris Path (KMP) Algorithm</i></b>
+                  <p>
+                    This algorithm used a lps (longest proper prefix which is also suffix) table to preprocess.
+                    The value of the obtained from the table can determine the position of test string to rollback while a mismatch happened between the test string and the pattern
+                    Worst case complexity for this algorithm is O(n)
+                  </p>
+              </li>
+              <li><b><i>Boyer Moore (BM) Algorithm</i></b> 
+                <p>
+                  This algorithm use a bad heuristic table for preprocessing. 
+                  The bad heuristic contained key and value pair that determined the number of shift need to be done when a mismatch is happening.
+                  The table is obtained from the pattern and not the text.
+                  This algorithm match string from to left.
+                </p>
+              </li>
+              <li><b><i>Regular Expression (Regex)</i></b>
+                <p>
+                  Regular Expression is a sequence of symbol or character or metacharacter that defines a string or a grammar for a string.
+                  Regular Expression is mainly used to extract the numeric and date information in this app.
+                </p>
+              </li>
+            </ul>
+      </div>
+
+      <div class="block-bottom">
+        <a href="/">Home</a>
+      </div>
+    </div>
+  </body>
+</html>

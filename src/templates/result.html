@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+  </head>
+  <body>
+    <div class="main-block">
+      <h1 align="center">Info Extractor App</h1>
+      <hr width="500px" size="1.5px">
+      <h3 align="center">Search Result</h3>
+        <div class="block">
+          <h4>Keyword : <label class="keyword"><u>{{keyword}}</u></label>
+          <h4><span>{{output|length}}</span> related information found <span class="right"> <a href="/about">{{algo}} algorithm </a></span></h4>
+        </div>
+        
+        {% for i in range(output|length): %}
+            <p>{{i+1}}. Waktu: <label class="date">{{output[i][0]}}</label></label> <span class="right">Jumlah: <label class="numeric">{{output[i][1]}}</label></span></p>
+            {% for j in range (output[i][2]|length-1):%}
+                <span>{{output[i][2][j]}}</span><span class="keyword">{{keyword}}</span>
+            {% endfor %}
+            <span>{{output[i][2][output[i][2]|length-1]}}</span>
+            <p><i>< {{output[i][3]}} ></i></p>
+          <p> ---------------------------- </p>
+        {% endfor %}
+        
+      <div class="block-bottom">
+        <a href="/">Search Again</a>
+      </div>
+
+    </div>
+    </body>
+    </html>

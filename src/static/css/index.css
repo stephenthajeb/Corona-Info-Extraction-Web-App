@@ -1,0 +1,62 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-bottom: 20px;
+  }​
+
+form{
+    margin-left: 10rem;
+}
+
+.main-block {
+    max-width: 520px; 
+    max-height: 540px;
+    min-width: 480px;
+    min-height: 520px;
+    padding: 10px 10px;
+    margin: auto;
+    border-radius: 5px; 
+    border: solid 1px #ccc;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    background: #ebebeb; 
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.block{
+    margin-left: 80px;
+    margin-bottom: 10px;
+    align-content: center;
+}
+
+hr{
+    margin-bottom: 10px;
+    background-color: #666;
+    border-style: solid;
+}
+
+#submit{
+    float: right;
+}
+
+.suggestion{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    color: grey;
+}
+
+.block-bottom{
+    margin-top: 60px;
+}
+
+h3{
+   margin-bottom: 25px;
+}
