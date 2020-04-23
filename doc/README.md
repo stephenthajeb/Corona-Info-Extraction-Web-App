@@ -1,6 +1,6 @@
 ## Program untuk extract informasi dari eksternal file
 
-## Program didesain agar pengguna dapat mengekstrak informasi terupdate tentang corona virus kata kunci yang diinginkan dalam waktu singkat tanpa harus membaca keseluruhan file untuk memperoleh informasi
+Program didesain agar pengguna dapat mengekstrak informasi terupdate tentang corona virus kata kunci yang diinginkan dalam waktu singkat tanpa harus membaca keseluruhan file untuk memperoleh informasi
 
 * Bahasa Pemograman : Python (versi 3 ke atas)
 * Web Framework : HTML,CSS,flask
@@ -8,14 +8,14 @@
 
 ![image](https://user-images.githubusercontent.com/47893326/80063970-42f69680-8561-11ea-80e1-a783ef2be8cd.png)
 
-## Struktur File
-## ├───doc
-## ├───src
-## │   ├───static
-## │   │   └───css
-## │   ├───templates
-## │   └───__pycache__
-## └───test
+#### Struktur File
+├───doc  
+├───src  
+│   ├───static  
+│   │   └───css  
+│   ├───templates  
+│   └───__pycache__  
+└───test  
 * Folder doc berisi laporan dan juga file READ.me
 * older src mengandung folder static, templates dan file program
 * Folder static berisi file css
